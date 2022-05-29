@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PizzaS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" onclick="window.location.href='http://localhost:3000/'">PizzaS</a>
+
+        </div>
+    </nav>
+</head>
+
+<body>
+
+    <h1 align="center"> Commande <%= numero %>
+    
+     </h1>
+    <div class="container">
+        <div class=row>
+            <div class="col-12 border" align="center">
+                <ul>
+                    <li>Nom : <%= nom %>
+                    </li>
+                    <li>Prenom : <%= prenom %>
+                    </li>
+                    <li>Adresse : <%= adresse %>
+                    </li>
+                    <li>Code : <%= code %>
+                    </li>
+                    <li>Phone : <%= phone %>
+                    </li>
+                    <li>Mail : <%= mail %>
+                    </li>
+                    <li>Temps voulu : <%= time %>
+                    </li>
+                    <li> <%= cmd %>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="col-12 border" align="center">
+                <form method="post">
+                    <button type="submit" class="btn btn-outline-success">Commande Livré</button>
+                  
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

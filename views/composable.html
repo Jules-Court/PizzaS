@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PizzaS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <script src="composable.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" onclick="window.location.href='http://localhost:3000/'">PizzaS</a>
+
+        </div>
+    </nav>
+
+   
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-2 col-sm-12 border" align="center">
+            <div class="row">
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="menu-click"
+                        onclick="window.location.href='http://localhost:3000/'">Menu</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="pizza-click"
+                        onclick="window.location.href='http://localhost:3000/'">Pizza</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="entree-click"
+                        onclick="window.location.href='http://localhost:3000/'">Entrées</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="sauce-click"
+                        onclick="window.location.href='http://localhost:3000/'">Sauces</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="dessert-click"
+                        onclick="window.location.href='http://localhost:3000/'">Desserts</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="boisson-click"
+                        onclick="window.location.href='http://localhost:3000/'">Boissons</button></h1>
+
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" onclick=window.location.href='compose' ;
+                        id="composable-click">Pizza composable</button></h1>
+
+
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-9 border" align="center" id="produit">
+            <div class="container">
+                <div class="row" id="section">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <p> Taille de la pizza</p>
+                        <select name="taille" id="taille-select">
+                            <option value="petit">Petit 5€</option>
+                            <option value="moyen">Moyen 7€</option>
+                            <option value="grand">Grand 10€</option>
+                        </select>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <p> Choix de la pizza</p>
+                        <select name="pizza" id="pizza-select">
+
+                        </select>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <p> Ingédients à ajouter </p>
+
+                        <div id="composable-select">
+                           
+                        </div>
+                            
+
+                        <div>
+                            <button type="button" id="add" name="${user.name}" price="${user.price}" id="add"
+                                class="btn btn-outline-success">Ajouter au panier TotalPrix€</button>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 border" align="center" id="panier">
+
+            <h1>Panier</h1>
+            <article class="panier"></article>
+            <p class="border solid black" id="price">Total : 0.00</p>
+            <button type="button" class="btn btn-outline-success" id="commande">Commander </button>
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

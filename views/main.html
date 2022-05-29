@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PizzaS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" onclick="window.location.href='http://localhost:3000/'">PizzaS</a>
+
+        </div>
+    </nav>
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col-md-2 col-sm-12 border" align="center">
+            <div class="row">
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="menu-click">Menu</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="pizza-click">Pizza</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="entree-click">Entrées</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="sauce-click">Sauces</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="dessert-click">Desserts</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="boisson-click">Boissons</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" onclick=window.location.href='compose' ;
+                        id="composable-click">Pizza composable</button></h1>
+
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-9 border" align="center" id="produit">
+            <div class="container">
+                <div class="row" id="section">
+                    <div class="col-12">
+
+                        <h1>BIENVENUE</h1>
+                        <h2>A la carte </h2>
+
+                    </div>
+
+                    <div class="col-4">
+                        <div class="jumbotron" id="menu-click2">
+                            Menu
+                        </div>
+                    </div>
+
+
+                    <div class="col-4">
+                        <div class="jumbotron" id="pizza-click2">
+                            Pizzas
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="jumbotron" id="entree-click2">
+                            Entrées
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="jumbotron" id="sauce-click2">
+                            Sauces
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+
+                        <div class="jumbotron" id="dessert-click2">
+                            Desserts
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="jumbotron" id="boisson-click2">
+                            Boissons
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 border" align="center" id="panier">
+
+            <h1>Panier</h1>
+            <article class="panier"></article>
+            <p class="border solid black" id="price">Total : 0.00</p>
+            <button type="button" class="btn btn-outline-success" id="commande">Commander </button>
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

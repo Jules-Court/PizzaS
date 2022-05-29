@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PizzaS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" onclick="window.location.href='http://localhost:3000/'">PizzaS</a>
+
+        </div>
+    </nav>
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col-md-2 col-sm-12 border" align="center">
+            <div class="row">
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="menu-click"
+                        onclick="window.location.href='http://localhost:3000/'">Menu</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="pizza-click"
+                        onclick="window.location.href='http://localhost:3000/'">Pizza</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="entree-click"
+                        onclick="window.location.href='http://localhost:3000/'">Entrées</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="sauce-click"
+                        onclick="window.location.href='http://localhost:3000/'">Sauces</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="dessert-click"
+                        onclick="window.location.href='http://localhost:3000/'">Desserts</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" id="boisson-click"
+                        onclick="window.location.href='http://localhost:3000/'">Boissons</button></h1>
+                <h1 class=" col-md-12 col-sm-4"> <button class="btn" onclick=window.location.href='compose' ;
+                        id="composable-click">Pizza composable</button></h1>
+
+            </div>
+        </div>
+
+        <div class="col-md-7 col-sm-9 border" align="center" id="form">
+            <div class="container">
+                <div class="row" id="section">
+                    <div class="col-12" id="form" align="center">
+                        <div class="title">Vos informations</div>
+
+                        <form action="" method="post" class="form-example">
+                            <div class="form-example" >
+                                <label for="name">Votre nom: </label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div class="form-example">
+                                <label for="prenom">Votre prénom: </label>
+                                <input type="text" name="prenom" id="prenom" required>
+                            </div>
+                            <div class="form-example">
+                                <label for="adresse">Votre adresse: </label>
+                                <input type="text" name="adresse" id="adresse" required>
+                            </div>
+                            <div class="form-example">
+                                <label for="code">Code immeuble: </label>
+                                <input type="text" name="code" id="code">
+                            </div>
+                            <div class="form-example">
+                                <label for="phone">Numéro de portable: </label>
+                                <input type="tel" name="phone" id="phone" required>
+                            </div>
+                            <div class="form-example">
+                                <label for="email">Votre adresse mail: </label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="form-example">
+                                <label for="heure">Heure de livraison: </label>
+                                <input type="time" name="heure" id="heure" required>
+                            </div>
+                            <div class="form-example">
+                                <input type="submit" class="btn btn-outline-success" id="envoie">
+
+                            </div>
+                        </form>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 border" align="center" id="panier">
+
+            <h1>Panier</h1>
+            <article class="panier"></article>
+            <p class="border solid black" id="price">Total : 0.00</p>
+            <button type="button" class="btn btn-outline-success" id="commande">Commander </button>
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
