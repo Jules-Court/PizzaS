@@ -40,8 +40,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.4.1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-         always-auth: false # optional, default is false
+         node-version: 16
+      - run: npm ci
+      - run: npm test
+
 
